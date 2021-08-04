@@ -1,0 +1,23 @@
+{
+  "name": "training-for-portfolio-project-in-sass-main",
+  "version": "0.1.0",
+  "description": "portfolio website with SASS and Flexbox",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelBlanchard/Training-for-portfolio-project-in-sass.git"
+  },
+  "author": "Emmanuel",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/EmmanuelBlanchard/Training-for-portfolio-project-in-sass/issues"
+  },
+  "homepage": "https://github.com/EmmanuelBlanchard/Training-for-portfolio-project-in-sass#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
