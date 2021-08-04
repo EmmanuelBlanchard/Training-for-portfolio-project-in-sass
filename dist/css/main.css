@@ -18,12 +18,25 @@ h1, h2, h3, h4 {
   font-weight: 500;
   text-transform: uppercase; }
 
-.header .header_content .btn_cta {
+.btn_cta, .btn_projects {
   display: inline-block;
   padding: 0.8rem 1.6rem;
   border-radius: 5px;
   border: none;
   transition: all 0.7s; }
+
+.btn_cta, .btn_projects {
+  color: #1d1d1d;
+  background-color: #7dff31; }
+  .btn_cta:hover, .btn_projects:hover {
+    color: #7dff31;
+    background-color: #1d1d1d; }
+
+.btn_projects {
+  padding: 0.8rem 2.6rem; }
+  .btn_projects:hover {
+    background-color: #f4f4f4;
+    color: #1d1d1d; }
 
 .container {
   max-width: 1280px;
@@ -40,20 +53,35 @@ h1, h2, h3, h4 {
 .text_center {
   text-align: center; }
 
-.ptb_0 {
+.p_0 {
   padding: 5rem; }
 
-.ptb_1 {
+.p_1 {
   padding: 4rem; }
 
-.ptb_2 {
+.p_2 {
   padding: 3rem; }
 
-.ptb_3 {
+.p_3 {
   padding: 2rem; }
 
-.ptb_4 {
+.p_4 {
   padding: 1rem; }
+
+.ptb_0 {
+  padding: 5rem 0; }
+
+.ptb_1 {
+  padding: 4rem 0; }
+
+.ptb_2 {
+  padding: 3rem 0; }
+
+.ptb_3 {
+  padding: 2rem 0; }
+
+.ptb_4 {
+  padding: 1rem 0; }
 
 .main_nav {
   display: flex;
@@ -98,12 +126,6 @@ h1, h2, h3, h4 {
     .header .header_content .cta_catch {
       font-size: 1.2rem;
       padding: 0.6rem 0 2.2rem 0; }
-    .header .header_content .btn_cta {
-      color: #1d1d1d;
-      background-color: #7dff31; }
-      .header .header_content .btn_cta:hover {
-        color: #7dff31;
-        background-color: #1d1d1d; }
 
 .section_technologies {
   background-color: #fdfdfd; }
@@ -123,3 +145,25 @@ h1, h2, h3, h4 {
     .section_technologies .technologies h3 {
       font-size: 1.5rem;
       margin-bottom: 0.3rem; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .projects .projects_img {
+    background: url(../img/projects.jpg) no-repeat center center/cover; }
+  .projects .projects_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1d1d1d;
+    color: #f4f4f4; }
+    .projects .projects_content ul {
+      margin-bottom: 2.5rem; }
+      .projects .projects_content ul .fas, .projects .projects_content ul .far {
+        padding-bottom: 0.6rem; }
+      .projects .projects_content ul .project_title {
+        padding-bottom: 0.5rem; }
+      .projects .projects_content ul .projects_number {
+        font-size: 1.3rem; }
+  .projects a {
+    margin: auto;
+    grid-column: 1/4; }
