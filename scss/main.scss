@@ -8,7 +8,7 @@ $main_bg: url('../img/main_bg.jpg');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Roboto', sans-serif; }
-a { text-decoration: none; color: $primary_color; }
+a { text-decoration: none; }
 ul { list-style-type: none; }
 h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
 
@@ -170,4 +170,14 @@ h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
   }
 
   a { margin: auto; grid-column: 1/4; }
+}
+
+// Footer
+
+.main_footer {
+  .footer_content {
+    color: $dark_color;
+
+    .contact_footer { margin-left: 3rem; }
+  }
 }
