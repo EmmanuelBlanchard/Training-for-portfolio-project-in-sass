@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
 
 $web_width: 1280px;
-$primary_color: #7dff31;
+$primary_color: #ffc831;
 $light_color: #f4f4f4;
 $dark_color: #1d1d1d;
 $main_bg: url('../img/main_bg.jpg');
@@ -23,7 +23,7 @@ h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
 }
 
 .btn {
-  &_cta, &_projects {
+  &_cta, &_projects, &_project_section {
     @extend %btn_prop_shared;
     color: $dark_color;
     background-color: $primary_color;
@@ -40,6 +40,18 @@ h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
     &:hover {
       background-color: $light_color;
       color: $dark_color;
+    }
+  }
+
+  &_project_section {
+    padding: 0.7rem 1.4rem;
+    background-color: $dark_color;
+    color: $light_color;
+
+    &:hover {
+      background-color: $light_color;
+      color: $dark_color;
+      border: 1px solid black;
     }
   }
 }
@@ -234,6 +246,23 @@ h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
     }
   }
 }
+
+// Projects
+
+.projects_section {
+  .project {
+    display: grid;
+    grid-gap: 0.8rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1.5rem 0;
+
+    img { margin-left: 0.7rem; }
+    .fas { padding-right: 0.3rem } 
+    .project_text { margin: 0.7rem 0.7rem; }
+  }
+}
+
+
 
 // Contact
 

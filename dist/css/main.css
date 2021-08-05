@@ -17,18 +17,18 @@ h1, h2, h3, h4 {
   font-weight: 500;
   text-transform: uppercase; }
 
-.btn_cta, .btn_projects {
+.btn_cta, .btn_projects, .btn_project_section {
   display: inline-block;
   padding: 0.8rem 1.6rem;
   border-radius: 5px;
   border: none;
   transition: all 0.7s; }
 
-.btn_cta, .btn_projects {
+.btn_cta, .btn_projects, .btn_project_section {
   color: #1d1d1d;
-  background-color: #7dff31; }
-  .btn_cta:hover, .btn_projects:hover {
-    color: #7dff31;
+  background-color: #ffc831; }
+  .btn_cta:hover, .btn_projects:hover, .btn_project_section:hover {
+    color: #ffc831;
     background-color: #1d1d1d; }
 
 .btn_projects {
@@ -36,6 +36,15 @@ h1, h2, h3, h4 {
   .btn_projects:hover {
     background-color: #f4f4f4;
     color: #1d1d1d; }
+
+.btn_project_section {
+  padding: 0.7rem 1.4rem;
+  background-color: #1d1d1d;
+  color: #f4f4f4; }
+  .btn_project_section:hover {
+    background-color: #f4f4f4;
+    color: #1d1d1d;
+    border: 1px solid black; }
 
 .container {
   max-width: 1280px;
@@ -109,9 +118,9 @@ h1, h2, h3, h4 {
       color: #FFF;
       text-transform: none; }
     .main_nav a:hover {
-      border-color: #7dff31; }
+      border-color: #ffc831; }
     .main_nav a.current_page {
-      border-color: #7dff31; }
+      border-color: #ffc831; }
 
 .header {
   background: url("../img/main_bg.jpg") no-repeat center top/cover;
@@ -141,7 +150,7 @@ h1, h2, h3, h4 {
     .section_technologies .technologies div, .about_section_technologies .technologies div {
       margin: 0 0.5rem; }
     .section_technologies .technologies .fas, .about_section_technologies .technologies .fas {
-      color: #7dff31;
+      color: #ffc831;
       background-color: #1d1d1d;
       padding: 0.7rem 1rem;
       margin-bottom: 0.7rem;
@@ -178,7 +187,7 @@ h1, h2, h3, h4 {
   grid-gap: 1.5rem; }
   .about_section .about_info .bio_content {
     grid-column: 2 /span 3;
-    border-left: 3px solid #7dff31;
+    border-left: 3px solid #ffc831;
     padding: 1.5rem 3.5rem; }
     .about_section .about_info .bio_content .about_title {
       font-size: 1.7rem;
@@ -201,7 +210,7 @@ h1, h2, h3, h4 {
     margin-bottom: 0.9rem; }
     .about_section_technologies .progress_bar div {
       height: 100%;
-      background-color: #7dff31;
+      background-color: #ffc831;
       border-radius: 4px;
       margin-top: 0.1rem; }
     .about_section_technologies .progress_bar_10 {
@@ -227,6 +236,18 @@ h1, h2, h3, h4 {
   .about_section_technologies .technologies .fas {
     color: #1d1d1d;
     background-color: #f4f4f4; }
+
+.projects_section .project {
+  display: grid;
+  grid-gap: 0.8rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1.5rem 0; }
+  .projects_section .project img {
+    margin-left: 0.7rem; }
+  .projects_section .project .fas {
+    padding-right: 0.3rem; }
+  .projects_section .project .project_text {
+    margin: 0.7rem 0.7rem; }
 
 .contact_section form {
   width: 960px;
