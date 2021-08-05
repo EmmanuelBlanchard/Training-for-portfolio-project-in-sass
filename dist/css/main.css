@@ -291,3 +291,86 @@ h1, h2, h3, h4 {
   color: #1d1d1d; }
   .main_footer .footer_content .contact_footer {
     margin-left: 3rem; }
+
+@media (max-width: 850px) {
+  .p_0 {
+    padding: 2.5rem; }
+  .p_1 {
+    padding: 2rem; }
+  .p_2 {
+    padding: 1.5rem; }
+  .p_3 {
+    padding: 1rem; }
+  .p_4 {
+    padding: 0.5rem; }
+  .ptb_0 {
+    padding: 2.5rem 0; }
+  .ptb_1 {
+    padding: 2rem 0; }
+  .ptb_2 {
+    padding: 1.5rem 0; }
+  .ptb_3 {
+    padding: 1rem 0; }
+  .ptb_4 {
+    padding: 0.5rem 0; }
+  .main_nav {
+    flex-direction: column;
+    justify-content: center; }
+    .main_nav li {
+      margin-top: 0.9rem;
+      font-size: 0.9rem;
+      padding: 1rem; }
+  .header .header_content .cta_title {
+    font-size: 2.5rem; }
+  .header .header_content .cta_catch {
+    text-align: center;
+    font-size: 1.1rem; }
+  .section_technologies .technologies {
+    display: block;
+    margin-top: 0.5rem; }
+    .section_technologies .technologies .fas {
+      margin-top: 2rem; }
+  .section_technologies .section_text {
+    font-size: 1rem; }
+  .projects {
+    display: block; }
+    .projects .projects_img {
+      display: none; }
+    .projects .projects_content {
+      display: block; }
+  .contact_section form {
+    width: 100%; }
+  .contact_section .label_input_fields {
+    display: block; }
+    .contact_section .label_input_fields label {
+      margin-top: 1.2rem;
+      padding-left: 0.9rem; }
+    .contact_section .label_input_fields textarea {
+      margin-bottom: 1.4rem; }
+    .contact_section .label_input_fields input, .contact_section .label_input_fields textarea {
+      width: 90%; }
+  .contact_info_section {
+    padding-bottom: 2.2rem; }
+    .contact_info_section .contact_info {
+      display: block; }
+      .contact_info_section .contact_info .fas, .contact_info_section .contact_info .fab {
+        margin-top: 1.7rem; } }
+
+@media (max-width: 1250px) {
+  .about_section .about_info {
+    display: block; }
+  .about_section_technologies h3, .about_section_technologies .progress_bar {
+    margin: 0.3rem 0.5rem; }
+  .about_section_technologies .section_separation {
+    margin-bottom: 1rem; }
+  .about_section_technologies .technologies {
+    display: block; }
+    .about_section_technologies .technologies div .fas {
+      margin-top: 1.7rem; }
+  .projects_section .project {
+    display: block; } }
+
+.main_footer {
+  margin: 0.6rem; }
+  .main_footer .footer_content .contact_footer {
+    margin: 0; }
