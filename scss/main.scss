@@ -70,6 +70,8 @@ h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
   &_4 { padding: 1rem 0; }
 }
 
+.section_separation { width: 50%; margin: 2.5rem auto; color: $light_color; }
+
 // Navigation
 
 .main_nav {
@@ -124,7 +126,7 @@ h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
 
 // Section 'technologies'
 
-.section_technologies {
+.section_technologies, .about_section_technologies {
   background-color: #fdfdfd;
 
   .technologies {
@@ -183,7 +185,7 @@ h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
     .bio_content {
       grid-column: 2 /span 3;
       border-left: 3px solid $primary_color;
-      padding: 0.8rem;
+      padding: 1.5rem 3.5rem;
 
       .about_title { font-size: 1.7rem; margin-bottom: 1rem; }
       ul li { margin-bottom: 1.2rem; }
@@ -193,6 +195,45 @@ h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
   }
 }
 
+.about_section_technologies {
+  background-color: $dark_color;
+  color: $light_color;
+
+  .section_text { margin-bottom: 1.5rem; }
+
+  .progress_bar {
+    height: 15px;
+    background-color: $light_color;
+    border-radius: 4px;
+    margin-bottom: 0.9rem;
+    
+    div {
+      height: 100%;
+      background-color: $primary_color;
+      border-radius: 4px;
+      margin-top: 0.1rem;
+    }
+
+    &_10 { width: 10% }
+    &_20 { width: 20% }
+    &_30 { width: 30% }
+    &_40 { width: 40% }
+    &_50 { width: 50% }
+    &_60 { width: 60% }
+    &_70 { width: 70% }
+    &_80 { width: 80% }
+    &_90 { width: 90% }
+    &_100 { width: 100% }
+
+  }
+
+  .technologies {
+    .fas {
+      color: $dark_color;
+      background-color: $light_color;
+    }
+  }
+}
 
 // Footer
 
