@@ -228,6 +228,44 @@ h1, h2, h3, h4 {
     color: #1d1d1d;
     background-color: #f4f4f4; }
 
+.contact_section form {
+  width: 960px;
+  margin: auto; }
+
+.contact_section .label_input_fields {
+  display: grid;
+  grid-template-areas: 'name email' 'message message';
+  grid-gap: 1.2rem;
+  margin-bottom: 0.8rem; }
+  .contact_section .label_input_fields label {
+    display: block;
+    text-align: left; }
+  .contact_section .label_input_fields input, .contact_section .label_input_fields textarea {
+    border: 2px solid #d4d4d4;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    width: 100%; }
+  .contact_section .label_input_fields .name_input {
+    grid-area: name; }
+  .contact_section .label_input_fields .email_input {
+    grid-area: email; }
+  .contact_section .label_input_fields .message_input {
+    grid-area: message; }
+  .contact_section .label_input_fields .is_required:after {
+    content: '*';
+    color: #dc143c;
+    padding-left: 0.2rem; }
+
+.contact_info_section {
+  background-color: #1d1d1d;
+  color: #f4f4f4; }
+  .contact_info_section .contact_info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .contact_info_section .contact_info i, .contact_info_section .contact_info h3 {
+      padding-bottom: 0.4rem; }
+
 .main_footer .footer_content {
   color: #1d1d1d; }
   .main_footer .footer_content .contact_footer {

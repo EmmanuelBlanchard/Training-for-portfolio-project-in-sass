@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b9a149dd20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="main_nav">
+      <a href="index.html">
+        <h1 class="logo_title">GP</h1>
+      </a>
+      <ul>
+        <li><a href="about.html">Présentation</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a class="current_page" href="contact.html">Me Contacter</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact_section text_center ptb_3">
+        <h2 class="section_title">Nous contacter</h2>
+        <p class="section_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus ducimus libero totam fugiat repellat.</p>
+        <form class="ptb_2">
+          <div class="label_input_fields">
+            <div class="name_input">
+              <label for="name" class="is_required">Nom</label>
+              <input type="text" id="name" placeholder="Votre nom ..." required>
+            </div>
+            <div class="email_input">
+              <label for="email" class="is_required">E-mail</label>
+              <input type="text" id="email" placeholder="Votre email ..." required>
+            </div>
+            <div class="message_input">
+              <label for="message" class="is_required">Message</label>
+              <textarea id="message" placeholder="Votre message ..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn_cta">Envoyer votre message</button>
+        </form>
+    </section>
+
+    <section class="contact_info_section text_center ptb_3">
+      <div class="container">
+        <div class="contact_info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>E-mail</h3>
+            <p>glen.phillips@wanadoo.fr</p>
+          </div>
+
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Téléphone</h3>
+            <p>+6628149520</p>
+          </div>
+
+          <div>
+            <i class="fab fa-github fa-2x"></i>
+            <h3>Github</h3>
+            <p>@gphil</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+    <footer class="main_footer ptb_3">
+      <div class="footer_content container text_center">
+        <p>Copyright &copy; 2021 Glen Phillips. Tous droits réservés. <span class="contact_footer">E-mail: <a href="mailto:glen.phillips@wanadoo.fr">glen.phillips@wanadoo.fr</a> | Tel: <a href="tel:+6628149520">+6628149520</a></span></p>
+      </div>
+    </footer>
+  </body>
+</html>
