@@ -172,6 +172,28 @@ h1, h2, h3, h4 { font-weight: 500; text-transform: uppercase; }
   a { margin: auto; grid-column: 1/4; }
 }
 
+// About section
+
+.about_section {
+  .about_info {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 1.5rem;
+
+    .bio_content {
+      grid-column: 2 /span 3;
+      border-left: 3px solid $primary_color;
+      padding: 0.8rem;
+
+      .about_title { font-size: 1.7rem; margin-bottom: 1rem; }
+      ul li { margin-bottom: 1.2rem; }
+    }
+
+    .about_icon_title { font-size: 1.3rem; padding: 0.7rem 0; }
+  }
+}
+
+
 // Footer
 
 .main_footer {

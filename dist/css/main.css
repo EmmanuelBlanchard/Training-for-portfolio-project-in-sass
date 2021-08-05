@@ -167,6 +167,23 @@ h1, h2, h3, h4 {
     margin: auto;
     grid-column: 1/4; }
 
+.about_section .about_info {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 1.5rem; }
+  .about_section .about_info .bio_content {
+    grid-column: 2 /span 3;
+    border-left: 3px solid #7dff31;
+    padding: 0.8rem; }
+    .about_section .about_info .bio_content .about_title {
+      font-size: 1.7rem;
+      margin-bottom: 1rem; }
+    .about_section .about_info .bio_content ul li {
+      margin-bottom: 1.2rem; }
+  .about_section .about_info .about_icon_title {
+    font-size: 1.3rem;
+    padding: 0.7rem 0; }
+
 .main_footer .footer_content {
   color: #1d1d1d; }
   .main_footer .footer_content .contact_footer {
